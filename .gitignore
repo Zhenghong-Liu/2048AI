@@ -1,0 +1,8 @@
+.DS_Store
+.vscode/
+env
+.env
+__pycache__/
+*.py[cod]
+*.pyc
+ansible

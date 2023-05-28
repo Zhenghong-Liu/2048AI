@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/keyframes.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/media.css') }}">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <title>2048</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1 class="title">
+                <a href="">2048</a>
+            </h1>
+            <div class="scores-container">
+                <div class="score-container">
+                    <p class="title">SCORE</p>
+                    <P class="score">0</P>
+                    <div class="score-addition">
+                        +4
+                    </div>
+                </div>
+                <div class="best-container">
+                    <p class="title">BEST</p>
+                    <P class="score">66666</P>
+                </div>
+            </div>
+        </div>
+        <div class="game-intro">
+            <a href="" class="restart-btn" id="restart-button">New Game</a>
+<!--            <h2 class="subtitle">-->
+<!--                Play 2048 Game Online-->
+<!--            </h2>-->
+<!--            <p class="above-game">-->
+<!--                Join the numbers and get to the <strong>2048</strong> tile!-->
+<!--            </p>-->
+            <a href="" class="restart-btn" id="Myself-button">Myself</a>
+            <a href="" class="restart-btn" id="Auto-button">Auto</a>
+            <a href="" class="restart-btn" id="Step-button">Step</a>
+
+        </div>
+        <div class="game-container">
+            <div class="grid-container">
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+            </div>
+            <div class="tile-container">
+
+            </div>
+            <div class="failure-container pop-container">
+                <p>:(</span></p>
+                <p>FIALURE</p>
+            </div>
+            <div class="winning-container pop-container">
+                <p>:)</p>
+                <p>WINNING</p>
+            </div>
+        </div>
+        <div class="footer">
+            <span>
+                Crafted with by
+                <a href="https://gd4ark.github.io/about/">@4Ark</a>/<a href="https://github.com/gd4Ark/2048">GitHub</a>
+            </span>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/config.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/data.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/utils.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/event.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/view.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/game.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+
+</html>
